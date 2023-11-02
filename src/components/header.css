@@ -1,0 +1,66 @@
+.nav {
+  background-color: #333; /* Background color */
+  overflow: hidden; /* Clear floats */
+}
+
+/* Navbar links styles */
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  float: left; /* Float the links to the left to create a horizontal layout */
+  display: block; /* Display as block elements for full-width links */
+  color: white; /* Text color */
+  text-align: center; /* Center-align the text */
+  padding: 14px 16px; /* Padding around the text */
+  text-decoration: none; /* Remove underlines from links */
+}
+
+/* Hamburger menu icon styles */
+.menu-icon {
+  display: none; /* Hide the menu icon by default for larger screens */
+  cursor: pointer;
+}
+
+/* The bars for the hamburger icon */
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+  .nav ul {
+    display: none; /* Hide the nav links by default on smaller screens */
+  }
+
+  .nav li {
+    float: none; /* Remove float for the links on smaller screens */
+    display: block; /* Display the links as block elements on smaller screens */
+    text-align: center;
+  }
+
+  /* Show the menu icon on smaller screens */
+  .menu-icon {
+    display: block;
+  }
+
+  /* Rotate and hide the bars when the menu is open */
+  .menu-icon.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-icon.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-icon.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
