@@ -4,15 +4,16 @@
 }
 .container{
     display: flex;
-    margin-top: 7rem;
+    margin-top: 10rem;
    justify-content: center;
+   
 }
 .intro{
   padding: 0;
   width: 40vw;
 }
 .naam{
-  color: #9f440b;
+  color: rgb(148, 43, 5);
   font-size: 3.2rem;
   margin-bottom: 3rem;
   width: 20vw;
@@ -51,7 +52,7 @@
       flex-direction: column;
       justify-content: center;
       max-width: 90vw;
-      margin-top: 1rem; /* Adjust the margin as needed */
+      margin-top: 4rem; /* Adjust the margin as needed */
       margin-left: .8rem; /* Remove the left margin for smaller screens */
     }
   
@@ -63,7 +64,7 @@
     .raj {
       width: 8rem; /* Adjust the size for the image on smaller screens */
       height: 8rem;
-      margin-left: 4rem; /* Remove the left margin for the image on smaller screens */
+      margin-left: 5.9rem; /* Remove the left margin for the image on smaller screens */
       margin-top: 3rem; 
     }
     .naam{

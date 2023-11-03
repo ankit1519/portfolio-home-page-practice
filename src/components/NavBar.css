@@ -1,5 +1,5 @@
 .nav {
-    background-color:#da9374;
+  background-color: rgb(148, 43, 5);
     overflow: hidden;
     display: flex;
     justify-content: space-between;
@@ -37,7 +37,7 @@
   .nav-links.open {
     display: flex;
     flex-direction: column;
-    background-color: #da9374;
+    background-color: rgb(148, 43, 5);
     opacity: 90%;
     position: absolute;
     top: 50px; /* Adjust the top position as needed */
